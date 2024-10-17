@@ -25,13 +25,15 @@ fn main() {
             Err(_) => continue,
         };
 
+        let converted_input: f32;
+
         if selection == 0 {
-            let converted_input: f32 = convert_to_fahrenheit(input);
+            converted_input = convert_to_fahrenheit(input);
 
             println!("{}°C are {}°F", input, converted_input);
             break;
         } else {
-            let converted_input: f32 = convert_to_celsius(input);
+            converted_input = convert_to_celsius(input);
 
             println!("{}°F are {}°C", input, converted_input);
             break;
